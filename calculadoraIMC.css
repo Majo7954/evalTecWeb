@@ -1,5 +1,37 @@
 body{
     font-family: Georgia, serif;
-    background-color: rgb(54, 52, 52);
-    
+    background-color: white;
+    align-items: center;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(44, 41, 41);
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.header a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.calculadora {
+    background-color: rgb(44, 41, 41);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+label{
+    font-weight: bold;
+    color: white;
+}
+
+h2{
+    font-weight: bold;
+    color: white;
 }
