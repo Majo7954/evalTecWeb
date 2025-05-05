@@ -1,37 +1,58 @@
-body{
+body {
     font-family: Georgia, serif;
     background-color: white;
-    align-items: center;
     margin: 0;
-}
-
-.header {
-    width: 100%;
-    background-color: rgb(44, 41, 41);
-    padding: 10px 20px;
-    margin-bottom: 30px;
-}
-
-.header a{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 60px; /* espacio para la barra de navegación */
+  }
+  
+  .calculadora {
     background-color: rgb(44, 41, 41);
     padding: 30px;
     border-radius: 10px;
     width: 300px;
-}
-
-label{
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  label {
     font-weight: bold;
     color: white;
-}
-
-h2{
+    display: block;
+    margin-top: 10px;
+  }
+  
+  h2 {
     font-weight: bold;
     color: white;
-}
+    text-align: center;
+  }
+  
+  input[type="number"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #resultado-imc {
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(44, 41, 41);
+    text-align: center;
+  }
+  
