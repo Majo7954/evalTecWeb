@@ -21,42 +21,19 @@ button {
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 0 20px 20px;
+  gap: 10px;
 }
 
 .row {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
+  gap: 10px;
 }
 
 .row img {
-  flex: 1 1 calc(33.33% - 40px); /* 3 por fila con espacio entre ellas */
-  max-width: calc(33.33% - 40px);
-  height: 200px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border: 2px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 8px;
-  transition: transform 0.2s;
-}
-
-.row img:hover {
-  transform: scale(1.03);
-}
-
-@media (max-width: 900px) {
-  .row img {
-    flex: 1 1 calc(50% - 40px); /* 2 por fila */
-    max-width: calc(50% - 40px);
-  }
-}
-
-@media (max-width: 600px) {
-  .row img {
-    flex: 1 1 100%; /* 1 por fila */
-    max-width: 100%;
-  }
 }
