@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcu IMC</title>
-    <script src="calc-imc.js"></script>
     <link rel="stylesheet" href="calculadoraIMC.css">
 </head>
 <body>
@@ -17,13 +16,15 @@
     
     <form id="imc-form" action="">
         <label for="peso">Peso</label>
-        <input id="peso" type="number" placeholder="peso (kg)"> <br>
+        <input id="peso" type="number" placeholder="peso (kg)" required>
         <label for="estatura">Estatura</label>
-        <input id="estatura" type="number" placeholder="estatura (m)">
-        <input type="button" value="Calcular">
+        <input id="estatura" type="number" placeholder="estatura (m)" required>
+        <input type="submit" value="Calcular">
     </form>
     <div id="resultado-imc">
 
     </div>
+
+    <script src="calc-imc.js"></script>
 </body>
 </html>
